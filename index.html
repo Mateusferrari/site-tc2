@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema CRUD com LocalStorage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Itens</h1>
+    <form id="itemForm">
+      <input type="hidden" id="itemId">
+      <label for="itemName">Nome do Item:</label>
+      <input type="text" id="itemName" required>
+      <button type="submit" id="saveBtn">Salvar</button>
+    </form>
+
+    <h2>Itens Cadastrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="itemsTable"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
